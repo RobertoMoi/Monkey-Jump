@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-	public float jumpHeight = 11f;
+	public float jumpForce = 11f;
 
 	void OnCollisionEnter2D(Collision2D collision)
 	{
@@ -14,7 +14,7 @@ public class Platform : MonoBehaviour
 			if (rigidbody != null)
 			{
 				Vector2 velocity = rigidbody.velocity;
-				velocity.y = jumpHeight;
+				velocity.y = jumpForce;
 				rigidbody.velocity = velocity;
 			}
 		}
