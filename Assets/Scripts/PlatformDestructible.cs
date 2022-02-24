@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlatformSuperJump : MonoBehaviour
+public class PlatformDestructible : MonoBehaviour
 {
-	public float jumpForce = 18f;
+	public float jumpForce = 11f;
+	public GameObject platform;
 
 	void OnCollisionEnter2D(Collision2D collision)
 	{
@@ -16,6 +17,7 @@ public class PlatformSuperJump : MonoBehaviour
 				Vector2 velocity = rigidbody.velocity;
 				velocity.y = jumpForce;
 				rigidbody.velocity = velocity;
+				Destroy(platform);
 			}
 		}
 	}

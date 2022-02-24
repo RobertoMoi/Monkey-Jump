@@ -11,6 +11,7 @@ public class Platform : MonoBehaviour
 		if (collision.relativeVelocity.y <= 0f)
 		{
 			Rigidbody2D rigidbody = collision.collider.GetComponent<Rigidbody2D>();
+
 			if (rigidbody != null)
 			{
 				Vector2 velocity = rigidbody.velocity;
