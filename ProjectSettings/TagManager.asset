@@ -11,6 +11,7 @@ TagManager:
   - EnemyBooster
   - LifePoint
   - Enemy
+  - DestructionPoint
   layers:
   - Default
   - TransparentFX

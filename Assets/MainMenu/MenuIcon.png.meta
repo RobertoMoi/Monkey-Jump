@@ -1,0 +1,444 @@
+fileFormatVersion: 2
+guid: a80bd49e16bb14024a8910c47bb329fb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4414603290514928831
+    second: "\u2014Pngtree\u2014green game button play set_6038226_0"
+  - first:
+      213: 9057632423259562611
+    second: "\u2014Pngtree\u2014green game button play set_6038226_1"
+  - first:
+      213: -6250531581371367455
+    second: "\u2014Pngtree\u2014green game button play set_6038226_2"
+  - first:
+      213: 2442549063695073897
+    second: "\u2014Pngtree\u2014green game button play set_6038226_3"
+  - first:
+      213: -7163247294444137402
+    second: "\u2014Pngtree\u2014green game button play set_6038226_4"
+  - first:
+      213: 4403797169527373267
+    second: "\u2014Pngtree\u2014green game button play set_6038226_5"
+  - first:
+      213: 5130974087893807249
+    second: "\u2014Pngtree\u2014green game button play set_6038226_6"
+  - first:
+      213: -4923097887276625501
+    second: "\u2014Pngtree\u2014green game button play set_6038226_7"
+  - first:
+      213: 449157489509901819
+    second: "\u2014Pngtree\u2014green game button play set_6038226_8"
+  - first:
+      213: -8189647325302310428
+    second: "\u2014Pngtree\u2014green game button play set_6038226_9"
+  - first:
+      213: -509772279458808831
+    second: "\u2014Pngtree\u2014green game button play set_6038226_10"
+  - first:
+      213: -8928062696301061045
+    second: "\u2014Pngtree\u2014green game button play set_6038226_11"
+  - first:
+      213: -1673696299417826208
+    second: "\u2014Pngtree\u2014green game button play set_6038226_12"
+  - first:
+      213: 3241152487146441776
+    second: "\u2014Pngtree\u2014green game button play set_6038226_13"
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014green game button play set_6038226_0"
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 979
+        width: 434
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4b96b9d42d34d30800000000000000
+      internalID: 4414603290514928831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014green game button play set_6038226_1"
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 915
+        width: 187
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372627613bc23bd70800000000000000
+      internalID: 9057632423259562611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014green game button play set_6038226_2"
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 915
+        width: 187
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1efbffab4a6a149a0800000000000000
+      internalID: -6250531581371367455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014green game button play set_6038226_3"
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 809
+        width: 434
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9620208ae6da5e120800000000000000
+      internalID: 2442549063695073897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014green game button play set_6038226_4"
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 666
+        width: 187
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6441168c988079c90800000000000000
+      internalID: -7163247294444137402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014green game button play set_6038226_5"
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 666
+        width: 187
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ddbc80813e6d1d30800000000000000
+      internalID: 4403797169527373267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014green game button play set_6038226_6"
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 639
+        width: 434
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190f4a47fb1e43740800000000000000
+      internalID: 5130974087893807249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014green game button play set_6038226_7"
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 469
+        width: 434
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a196622e84adabb0800000000000000
+      internalID: -4923097887276625501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014green game button play set_6038226_8"
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 417
+        width: 187
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5a1726b5abb3600800000000000000
+      internalID: 449157489509901819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014green game button play set_6038226_9"
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 417
+        width: 187
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9b0a3f527885e80800000000000000
+      internalID: -8189647325302310428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014green game button play set_6038226_10"
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 299
+        width: 434
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c348e00dcece8f0800000000000000
+      internalID: -509772279458808831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014green game button play set_6038226_11"
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 168
+        width: 187
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c1f86d746291480800000000000000
+      internalID: -8928062696301061045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014green game button play set_6038226_12"
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 168
+        width: 187
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c80535516d5c8e0800000000000000
+      internalID: -1673696299417826208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014green game button play set_6038226_13"
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 129
+        width: 434
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ccc33c303eafc20800000000000000
+      internalID: 3241152487146441776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
