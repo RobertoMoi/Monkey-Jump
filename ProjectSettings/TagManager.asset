@@ -12,6 +12,7 @@ TagManager:
   - LifePoint
   - Enemy
   - DestructionPoint
+  - SuperJumpPlatform
   layers:
   - Default
   - TransparentFX

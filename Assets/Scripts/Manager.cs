@@ -17,10 +17,10 @@ public class Manager : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void UpdateScore()
+    public void UpdateScore(int points)
     {
-        score++;
-
+        score += points;
+       
         scoreText.text = "Score: " + score;
     }
 }

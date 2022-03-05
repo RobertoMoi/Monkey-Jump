@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlatformDestructible : MonoBehaviour
 {
 	public float jumpForce = 11f;
-	public GameObject platform;
+	public int points = 3;
 	public Manager manager;
 	public bool firstCollision = true;
 
@@ -23,14 +23,14 @@ public class PlatformDestructible : MonoBehaviour
 			{
 				if (firstCollision)
 				{
-					manager.UpdateScore();
+					manager.UpdateScore(points);
 					firstCollision = false;
 				}
 
 				Vector2 velocity = rigidbody.velocity;
 				velocity.y = jumpForce;
 				rigidbody.velocity = velocity;
-				Destroy(platform);
+				Destroy(gameObject);
 			}
 		}
 	}

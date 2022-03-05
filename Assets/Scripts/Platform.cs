@@ -5,6 +5,7 @@ using UnityEngine;
 public class Platform : MonoBehaviour
 {
 	public float jumpForce = 11f;
+	public int points = 1;
 	public Manager manager;
 	public bool firstCollision = true;
 
@@ -22,8 +23,8 @@ public class Platform : MonoBehaviour
 			if (rigidbody != null)
 			{
 				if (firstCollision)
-				{
-					manager.UpdateScore();
+				{	
+					manager.UpdateScore(points);
 					firstCollision = false;
 				}
 
