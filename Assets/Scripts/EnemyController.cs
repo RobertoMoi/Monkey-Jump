@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+
+    public Difficulty.DifficultyLevel currentDifficulty;
     public float speed;
     public float normalSpeed;
     public float stoppingTimeWhenCollide;
@@ -14,8 +16,9 @@ public class EnemyController : MonoBehaviour
    
     // Start is called before the first frame update
     void Start()
-    {   
-        target = GameObject.FindGameObjectWithTag("Player");   
+    {
+        SetSpeed();
+        target = GameObject.FindGameObjectWithTag("Player");        
     }
 
     // Update is called once per frame
@@ -23,6 +26,7 @@ public class EnemyController : MonoBehaviour
     {
         if (target == null)
             return;
+
         if (Vector2.Distance(transform.position, target.transform.position) > stoppingDistanceFromPlayer) { 
         transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
         }
@@ -36,7 +40,23 @@ public class EnemyController : MonoBehaviour
             StartCoroutine("StoppingEnemy");
         }
     }
+    
+    void SetSpeed()
+    {
+        currentDifficulty = Difficulty.difficultyChoice;
 
+        if (currentDifficulty == Difficulty.DifficultyLevel.Easy)
+        {
+            speed -= 1;
+            normalSpeed -= 1;
+        }
+        else if (currentDifficulty == Difficulty.DifficultyLevel.Medium)
+        {
+            speed -= .5f;
+            normalSpeed -= .5f;
+        }
+    }
+  
     IEnumerator StoppingEnemy()
     {
         yield return new WaitForSeconds(stoppingTimeWhenCollide);

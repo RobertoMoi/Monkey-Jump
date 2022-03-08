@@ -544,6 +544,10 @@ MonoBehaviour:
   levelWidth: 3
   minY: 0.2
   maxY: 1.5
+  minRangePowerUp: 0
+  maxRangePowerUp: 0
+  minRangeWeakening: 0
+  maxRangeWeakening: 0
 --- !u!4 &443492827
 Transform:
   m_ObjectHideFlags: 0
@@ -1227,8 +1231,8 @@ MonoBehaviour:
   boostedSpeed: 15
   normalSpeed: 10
   slowedSpeed: 6
-  slowedEnemySpeed: 3
-  boostedEnemySpeed: 2
+  slowedEnemySpeed: 1
+  boostedEnemySpeed: 1
   changedSpeedTime: 15
 --- !u!1 &1113096802
 GameObject:
@@ -2452,9 +2456,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1fd3a5c35d3e2649956df01c4e3d0ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  normalSpeed: 4
-  stoppingTimeWhenCollide: 0
+  currentDifficulty: 0
+  speed: 3
+  normalSpeed: 3
+  stoppingTimeWhenCollide: 1
   stoppingDistanceFromPlayer: 0.51
   rb: {fileID: 0}
 --- !u!60 &2046935695

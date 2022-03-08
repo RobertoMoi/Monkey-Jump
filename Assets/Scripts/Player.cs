@@ -14,8 +14,8 @@ public class Player : MonoBehaviour
 	public float normalSpeed = 10f;
 	public float slowedSpeed = 6f;
 	
-	public float slowedEnemySpeed = 3f;
-	public float boostedEnemySpeed = 2f;
+	public float slowedEnemySpeed = 1;
+	public float boostedEnemySpeed = 1;
 
 	public float changedSpeedTime = 15;
 	
@@ -80,13 +80,12 @@ public class Player : MonoBehaviour
 	IEnumerator SlowedEnemySpeedDuration()
 	{
 		yield return new WaitForSeconds(changedSpeedTime);
-		enemyScript.speed += slowedEnemySpeed;
+		enemyScript.speed = enemyScript.normalSpeed;
 	}
 
 	IEnumerator BoostedEnemySpeedDuration()
 	{
 		yield return new WaitForSeconds(changedSpeedTime);
-		enemyScript.speed -= boostedEnemySpeed;
+		enemyScript.speed = enemyScript.normalSpeed;
 	}
-
 }

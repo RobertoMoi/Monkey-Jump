@@ -7,11 +7,11 @@ public class Platform : MonoBehaviour
 	public float jumpForce = 11f;
 	public int points = 1;
 	public Manager manager;
-	public bool firstCollision = true;
+	public bool firstCollision = true;	
 
 	void Start()
     {
-		manager = GameObject.Find("GameManager").GetComponent<Manager>();
+		manager = GameObject.Find("GameManager").GetComponent<Manager>();		
 	}
 
 	void OnCollisionEnter2D(Collision2D collision)
@@ -32,6 +32,6 @@ public class Platform : MonoBehaviour
 				velocity.y = jumpForce;
 				rigidbody.velocity = velocity;
 			}
-		}
+		}		
 	}
 }
