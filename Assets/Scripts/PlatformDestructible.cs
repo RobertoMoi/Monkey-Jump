@@ -32,6 +32,7 @@ public class PlatformDestructible : MonoBehaviour
 				{
 					manager.UpdateScore(points);
 					firstCollision = false;
+					manager.saveData();
 				}
 
 				Vector2 velocity = rigidbody.velocity;
@@ -39,7 +40,5 @@ public class PlatformDestructible : MonoBehaviour
 				rigidbody.velocity = velocity;
 			}
 		}
-
-		
 	}
 }

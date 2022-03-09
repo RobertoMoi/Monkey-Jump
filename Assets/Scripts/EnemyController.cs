@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
 
-    public Difficulty.DifficultyLevel currentDifficulty;
+    public CommonVariablesBetweenScenes.DifficultyLevel currentDifficulty;
     public float speed;
     public float normalSpeed;
     public float stoppingTimeWhenCollide;
@@ -43,14 +43,14 @@ public class EnemyController : MonoBehaviour
     
     void SetSpeed()
     {
-        currentDifficulty = Difficulty.difficultyChoice;
+        currentDifficulty = CommonVariablesBetweenScenes.difficultyChoice;
 
-        if (currentDifficulty == Difficulty.DifficultyLevel.Easy)
+        if (currentDifficulty == CommonVariablesBetweenScenes.DifficultyLevel.Easy)
         {
             speed -= 1;
             normalSpeed -= 1;
         }
-        else if (currentDifficulty == Difficulty.DifficultyLevel.Medium)
+        else if (currentDifficulty == CommonVariablesBetweenScenes.DifficultyLevel.Medium)
         {
             speed -= .5f;
             normalSpeed -= .5f;

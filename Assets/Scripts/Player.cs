@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -8,7 +9,9 @@ public class Player : MonoBehaviour
 {	
 	public GameObject enemy;
 	EnemyController enemyScript;
-	
+	public GameObject mainCamera;
+	private Manager _manager;
+
 	public float speed = 30f;
 	public float boostedSpeed = 15f;
 	public float normalSpeed = 10f;
@@ -28,12 +31,21 @@ public class Player : MonoBehaviour
 	{
 		rb = GetComponent<Rigidbody2D>();
 		enemyScript = enemy.GetComponent<EnemyController>();
+		_manager = GameObject.Find("GameManager").GetComponent<Manager>();
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
 		control = Input.GetAxis("Horizontal") * speed;
+
+	
+		if ((transform.position.y  - mainCamera.transform.position.y) <= -10)
+		{
+			//Destroy(gameObject);
+			_manager.saveData();
+			SceneManager.LoadScene(0);
+		}
 	}
 
 	void FixedUpdate()

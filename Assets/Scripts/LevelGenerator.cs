@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
 {
-	public Difficulty.DifficultyLevel chosenMode;
+	public CommonVariablesBetweenScenes.DifficultyLevel chosenMode;
 
 	public GameObject platformPrefab;
 	public GameObject destructiblePlatform;
@@ -37,9 +37,9 @@ public class LevelGenerator : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
-		chosenMode = Difficulty.difficultyChoice;
+		chosenMode = CommonVariablesBetweenScenes.difficultyChoice;
 
-		if (chosenMode == Difficulty.DifficultyLevel.Easy)
+		if (chosenMode == CommonVariablesBetweenScenes.DifficultyLevel.Easy)
 		{
 			ItemValuesInitialization(6, 23, 12, 36);
 
@@ -49,7 +49,7 @@ public class LevelGenerator : MonoBehaviour
 				ItemGeneration(i, 0.2f, 5, 20, 15, 40);
 			}
 		}
-		else if(chosenMode == Difficulty.DifficultyLevel.Medium)
+		else if(chosenMode == CommonVariablesBetweenScenes.DifficultyLevel.Medium)
         {
 			ItemValuesInitialization(12, 30, 8, 25);
 

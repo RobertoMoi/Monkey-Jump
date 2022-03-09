@@ -6,54 +6,19 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MainMenu : MonoBehaviour
+public class HighScoreManager : MonoBehaviour
 {
-    public InputField nickname;
     private string savePath;
     const int scoreSlot = 10;
     public Text[] score = new Text[scoreSlot];
 
-    public void PlayGame()
-    {
-        GameData newData = new GameData();
-
-        PlayerPrefs.SetString("PlayerName", nickname.text);
-        PlayerPrefs.Save();
-
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-    public void ContinueGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-    public void AwardsGame()
-    {
-        Debug.Log("AWARDS!");
-        Application.Quit();
-    }
-
-    public void QuitGame()
-    {
-        Debug.Log("QUIT!");
-        Application.Quit();
-    }
-
-    public void SetDifficulty(int difficultyIndex)
-    {
-        CommonVariablesBetweenScenes.difficultyChoice = (CommonVariablesBetweenScenes.DifficultyLevel) difficultyIndex;
-
-        Debug.Log(CommonVariablesBetweenScenes.difficultyChoice);
-    }
-
-    // Start is called before the first frame update
     void Start()
     {
         savePath = Application.persistentDataPath + "/scores.sav";
         BinaryFormatter formatter = new BinaryFormatter();
         GameData currentData = new GameData(); //creo i punteggi di default
 
+        //TODO: carica i punteggi in currentdata se il file savePath esite, altrimenti salva i punteggi di default su file
         if (File.Exists(savePath))
         {
             FileStream file = File.Open(savePath, FileMode.Open);
@@ -66,15 +31,9 @@ public class MainMenu : MonoBehaviour
             formatter.Serialize(file, currentData);
             file.Close();
         }
-        for (int i = 0; i < scoreSlot; i++)
+        for(int i = 0; i < scoreSlot; i++)
         {
             score[i].text = currentData.highScores[i].name + ": " + currentData.highScores[i].score;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
