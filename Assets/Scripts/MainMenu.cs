@@ -10,8 +10,8 @@ public class MainMenu : MonoBehaviour
 {
     public InputField nickname;
     private string savePath;
-    const int scoreSlot = 10;
-    public Text[] score = new Text[scoreSlot];
+    const int HighScoreSlots = 10;
+    public Text[] score = new Text[HighScoreSlots];
 
     public void PlayGame()
     {
@@ -31,7 +31,6 @@ public class MainMenu : MonoBehaviour
     public void AwardsGame()
     {
         Debug.Log("AWARDS!");
-        Application.Quit();
     }
 
     public void QuitGame()
@@ -66,7 +65,7 @@ public class MainMenu : MonoBehaviour
             formatter.Serialize(file, currentData);
             file.Close();
         }
-        for (int i = 0; i < scoreSlot; i++)
+        for (int i = 0; i < HighScoreSlots; i++)
         {
             score[i].text = currentData.highScores[i].name + ": " + currentData.highScores[i].score;
         }

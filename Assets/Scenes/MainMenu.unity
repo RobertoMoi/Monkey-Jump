@@ -361,7 +361,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -256, y: -131.42}
+  m_AnchoredPosition: {x: -454.6, y: -105.1}
   m_SizeDelta: {x: 102.3762, y: 30.497}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &89426794
@@ -488,7 +488,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 997461558}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: ContinueGame
         m_Mode: 1
@@ -747,7 +747,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1708351451}
+      - m_Target: {fileID: 1611977051}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -1074,7 +1074,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1708351453}
+      - m_Target: {fileID: 729714345}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: PlayGame
         m_Mode: 1
@@ -1158,7 +1158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -136, y: -135.6}
+  m_AnchoredPosition: {x: -247, y: -149.1}
   m_SizeDelta: {x: 102.3762, y: 30.497}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &414155690
@@ -2088,7 +2088,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 997461558}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -2595,7 +2595,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -136.00003, y: -228.5}
+  m_AnchoredPosition: {x: -127, y: -118.6}
   m_SizeDelta: {x: 102.3762, y: 30.497}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1000032764
@@ -2753,7 +2753,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -256, y: -198}
+  m_AnchoredPosition: {x: -454.6, y: -170.1}
   m_SizeDelta: {x: 102.3762, y: 30.497}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1023813856
@@ -3139,7 +3139,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -256, y: -100.92}
+  m_AnchoredPosition: {x: -127, y: -149.1}
   m_SizeDelta: {x: 102.3762, y: 30.497}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1222244586
@@ -3218,7 +3218,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -136, y: -196.6}
+  m_AnchoredPosition: {x: -247, y: -210.13}
   m_SizeDelta: {x: 102.3762, y: 30.497}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1271362008
@@ -3762,7 +3762,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -136, y: -166.1}
+  m_AnchoredPosition: {x: -247, y: -179.6}
   m_SizeDelta: {x: 102.3762, y: 30.497}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1384285400
@@ -3928,7 +3928,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -136, y: -105.1}
+  m_AnchoredPosition: {x: -247, y: -118.6}
   m_SizeDelta: {x: 102.3762, y: 30.497}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1401494648
@@ -5128,7 +5128,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -256, y: -161.92}
+  m_AnchoredPosition: {x: -454.6, y: -135.6}
   m_SizeDelta: {x: 102.3762, y: 30.497}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1778857255
@@ -5387,7 +5387,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -256, y: -228.5}
+  m_AnchoredPosition: {x: -454.6, y: -200.6}
   m_SizeDelta: {x: 102.3762, y: 30.497}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1864678227
@@ -5554,6 +5554,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 729714345}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: AwardsGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

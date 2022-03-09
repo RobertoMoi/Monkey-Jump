@@ -6,10 +6,13 @@ using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+
 [System.Serializable]
 public class GameData
-{
-    public PlayerData[] highScores = new PlayerData[10];
+{   
+    const int PlayerDataSlots = 10;
+    public PlayerData[] highScores = new PlayerData[PlayerDataSlots];
 }
 
 [System.Serializable]
@@ -32,6 +35,8 @@ public struct PlayerData : IComparable<PlayerData>
 
 public class Manager : MonoBehaviour
 {
+    const int HighScoreSlotsTemp = 11;
+    const int HighScoreSlots = 10;
     private int score;
     public Text scoreText;
     private string savePath;
@@ -42,7 +47,6 @@ public class Manager : MonoBehaviour
         score = 0;
     }
 
-    // Update is called once per frame
     public void UpdateScore(int points)
     {
         score += points;
@@ -52,23 +56,28 @@ public class Manager : MonoBehaviour
 
     private void UpdateScores(ref GameData g, string playerName, int score)
     {
+        //Salva i dati del giocatore corrente
         PlayerData newScore = new PlayerData();
         newScore.score = score;
         newScore.name = playerName;
         
-        PlayerData[] allScores = new PlayerData[11];
+        //Creazione array di supporto con tutti i punteggi più il nuovo
+        PlayerData[] allScores = new PlayerData[HighScoreSlotsTemp];
 
-        for(int i =0; i < 11; i++)
+        for(int i = 0; i < HighScoreSlotsTemp; i++)
         {
-            if (i < 10)
+            if (i < HighScoreSlots)
                 allScores[i] = g.highScores[i];
             else
                 allScores[i] = newScore;
-
         }
+        
+        //Prima ordina l'array di supporto in maniera crescente successivamente lo inverte in modo che sia ordinato in maniera decrescente
         Array.Sort(allScores);
-
-        for (int i = 0; i < 10; i++)
+        Array.Reverse(allScores);
+        
+        //Vengono inseriti i nuovi dieci punteggi migliori, escludendo l'undicesimo
+        for (int i = 0; i < HighScoreSlots; i++)
         {            
             g.highScores[i] = allScores[i];
         }
