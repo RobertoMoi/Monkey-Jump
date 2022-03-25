@@ -25,9 +25,12 @@ public class PlatformDestructible : MonoBehaviour
 			Rigidbody2D rigidbody = collision.collider.GetComponent<Rigidbody2D>();
 			if (rigidbody != null)
 			{
+				//quando il giocatore entra in collisione con il blocco parte l'animazione e a fine animazione verrà distrutto
 				isColliding = true;
 				animator.SetBool("isColliding", isColliding);
 				isColliding = false;
+				
+				//se è la prima collisione tra il giocatore e il blocco allora viene incrementato il punteggio
 				if (firstCollision)
 				{
 					manager.UpdateScore(points);

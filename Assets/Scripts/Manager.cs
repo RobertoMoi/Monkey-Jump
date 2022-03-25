@@ -9,6 +9,8 @@ using UnityEngine.UI;
 
 
 [System.Serializable]
+/*
+ * Contiene i dati dei primi 10 giocatori per punteggio */
 public class GameData
 {   
     const int PlayerDataSlots = 10;
@@ -16,17 +18,18 @@ public class GameData
 }
 
 [System.Serializable]
+/*
+ * Dati del giocatore che servono per registrare un nuovo punteggio */
 public struct PlayerData : IComparable<PlayerData>
 {  
     #nullable enable
-    private int? _pos;
-    public int pos { get { return _pos ?? 0; } set { _pos = value; } }
     private int? _score;
     public int score { get { return _score ?? 0; } set { _score = value; } }
     private string? _name;
     public string name { get { return _name ?? "no name"; } set { _name = value; } }
     #nullable disable
 
+    //confronta due punteggi
     public int CompareTo(PlayerData other)
     {
         return score.CompareTo(other.score);
@@ -35,7 +38,7 @@ public struct PlayerData : IComparable<PlayerData>
 
 public class Manager : MonoBehaviour
 {
-    const int HighScoreSlotsTemp = 11;
+    const int HighScoreSlotsTemp = 11; //slots del vettore di supporto che conterrà i dati dei 10 giocatori migliori più i dati del nuovo giocatore
     const int HighScoreSlots = 10;
     private int score;
     public Text scoreText;
@@ -44,14 +47,15 @@ public class Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        score = 0;
+        score = 0; //ogni volta che inizia una nuova partita il punteggio è uguale a zero
     }
 
     public void UpdateScore(int points)
     {
-        score += points;
+        score += points; //il punteggio viene aggiornato con i punti del giocatore corrente
        
-        scoreText.text = "Score: " + score;
+        scoreText.text = "Score: " + score; 
+        CommonVariablesBetweenScenes.scoreGameOver = scoreText; //lo score nella scena gameover viene aggiornato con il punteggio del giocatore corrente
     }
 
     private void UpdateScores(ref GameData g, string playerName, int score)
@@ -83,6 +87,7 @@ public class Manager : MonoBehaviour
         }
     }
 
+    //permette di salvare i nuovi dati del giocatore corrente
     public void saveData()
     {
         savePath = Application.persistentDataPath + "/scores.sav";
