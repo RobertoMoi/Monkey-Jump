@@ -16,9 +16,17 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         GameData newData = new GameData(); //creazione di un nuovo contenitore di dati
+        
+        string username = nickname.text;
+
+        //gestisce i casi in cui il nickname è più lungo (o uguale) di 17 caratteri o se non viene inserito alcun carattere
+        if (nickname.text.Length >= 17)
+            username = nickname.text.Remove(16);
+        else if (nickname.text.Length == 0)
+            username = "No name";
 
         //viene impostato e salvato il nickname del giocatore nelle PlayerPerfs
-        PlayerPrefs.SetString("PlayerName", nickname.text);
+        PlayerPrefs.SetString("PlayerName", username);
         PlayerPrefs.Save();
         
         //se il livello di difficoltà è impostato a NotSet la partita non inizia altrimenti viene caricata una nuova partita
@@ -35,7 +43,7 @@ public class MainMenu : MonoBehaviour
 
     public void AwardsGame()
     {
-        Debug.Log("AWARDS!");
+        Debug.Log("Scores!");
     }
 
     public void QuitGame()

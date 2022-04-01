@@ -27,7 +27,6 @@ public class PauseMenu : MonoBehaviour
         //il menù di pausa viene disattivato e il gioco viene reimpostato alla velocità normale
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
-
     }
 
     public void Home()

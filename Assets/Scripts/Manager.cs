@@ -26,7 +26,7 @@ public struct PlayerData : IComparable<PlayerData>
     private int? _score;
     public int score { get { return _score ?? 0; } set { _score = value; } }
     private string? _name;
-    public string name { get { return _name ?? "no name"; } set { _name = value; } }
+    public string name { get { return _name ?? "no score"; } set { _name = value; } }
     #nullable disable
 
     //confronta due punteggi

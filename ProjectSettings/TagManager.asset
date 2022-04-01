@@ -16,6 +16,7 @@ TagManager:
   - LifePoint1
   - LifePoint2
   - LifePoint3
+  - DestrPlatform
   layers:
   - Default
   - TransparentFX

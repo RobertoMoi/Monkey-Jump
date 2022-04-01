@@ -29,7 +29,7 @@ public class Platform : MonoBehaviour
 					manager.UpdateScore(points);
 					firstCollision = false;
 				}
-
+				
 				Vector2 velocity = rigidbody.velocity;
 				velocity.y = jumpForce;
 				rigidbody.velocity = velocity;

@@ -25,7 +25,7 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //se il giocatore non esiste non fare nulla
+        //se il giocatore non esiste il nemico sta fermo
         if (target == null)
             return;
 
@@ -49,16 +49,16 @@ public class EnemyController : MonoBehaviour
     {
         currentDifficulty = CommonVariablesBetweenScenes.difficultyChoice; //prende la difficoltà scelta dal giocatore nel menù principale
 
-        //Più il livello di difficoltà è elevato e più il nemico è veloce
+        //Più il livello di difficoltà è elevato e più il nemico è veloce (per la modalità difficile è impostato di default)
         if (currentDifficulty == CommonVariablesBetweenScenes.DifficultyLevel.Easy)
         {
-            speed -= 1;
-            normalSpeed -= 1;
+            speed -= .3f;
+            normalSpeed -= .3f;
         }
         else if (currentDifficulty == CommonVariablesBetweenScenes.DifficultyLevel.Medium)
         {
-            speed -= .5f;
-            normalSpeed -= .5f;
+            speed -= .2f;
+            normalSpeed -= .2f;
         }
     }
     

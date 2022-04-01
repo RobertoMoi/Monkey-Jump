@@ -43,6 +43,8 @@ public class Player : MonoBehaviour
 
 	Rigidbody2D rb;
 
+	private float belowCameraPosition = -7f;
+
 	float control = 0f;
 
 	// Use this for initialization
@@ -69,10 +71,11 @@ public class Player : MonoBehaviour
 		animator.SetBool("hiveCollision", hiveCollision);
 		animator.SetBool("hit", hitByEnemy);
 		
-		//Quando il giocatore manca un blocco e finisce sotto la visuale della camera la partita termina
-		if ((transform.position.y  - mainCamera.transform.position.y) <= -10)
+		//Quando il giocatore cade e finisce sotto la visuale della camera la partita termina
+		if ((transform.position.y  - mainCamera.transform.position.y) <= belowCameraPosition)
 		{
 			//Destroy(gameObject);
+			control = 0; //toglie la possibilità al giocatore di potersi muovere dopo che la partita è finita
 			_manager.saveData(); //salva i dati correnti
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //carica la scena di game over
 		}
@@ -110,6 +113,7 @@ public class Player : MonoBehaviour
 			}
 			else
 			{
+				control = 0;
 				_manager.saveData();
 				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 			}
